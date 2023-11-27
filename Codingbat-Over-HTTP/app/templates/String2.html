@@ -1,0 +1,11 @@
+{% extends "root.html" %}
+
+{% block content %}
+    <form method="GET" action="{% url "String2"%}">
+        {{ form.as_p }}
+        <button type="submit">Submit</button>
+    </form>
+    {% if word is not None %}
+        <p>Word: {{ word }}</p>
+    {% endif %}
+{% endblock content %}

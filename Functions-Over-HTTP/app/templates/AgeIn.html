@@ -1,0 +1,17 @@
+
+{% extends "root.html" %}
+    
+{% block content %}
+    <form method="GET" action="{% url 'AgeIn' %}">
+        {{ form.as_p }}
+        <button type="submit">Submit</button>
+    </form>
+
+    
+    {% if age is not None %}
+        <p>BirthYear:{{ x }}</p>
+        <p>End: {{ y }}</p>
+        <p>Age: {{ age }}</p>
+    {% endif %}
+{% endblock content %}
+

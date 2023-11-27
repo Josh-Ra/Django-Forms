@@ -1,0 +1,11 @@
+{% extends "root.html" %}
+
+{% block content %}
+    <form method="GET" action="{% url "OrderTotal" %}">
+        {{ form.as_p }}
+        <button type="submit">Submit</button>
+    </form>
+    {% if total is not None %}
+        <p>Your total is: ${{ total|floatformat:2 }}</p>
+    {% endif %}
+{% endblock content %}

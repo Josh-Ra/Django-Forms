@@ -1,0 +1,12 @@
+{% extends "root.html" %}
+
+{% block content %}
+    <form method="GET" action="{% url "Logic2" %}">
+        {{ form.as_p }}
+        <button type='submit'>Submit</button>
+    </form>
+
+    {% if total is not None %}
+        <p>Total: {{ total }}</p>
+    {% endif %}
+{% endblock content %}
