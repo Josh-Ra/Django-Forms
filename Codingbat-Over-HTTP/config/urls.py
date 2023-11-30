@@ -20,9 +20,9 @@ import app.views
 
 urlpatterns = [
     path("", app.views.root, name="root"),
-    path("warmup-2", app.views.Warmup_2, name="Warmup2"),
-    path("logic-2", app.views.Logic_2, name="Logic2"),
-    path("string-2", app.views.String_2, name="String2"),
-    path("list-2", app.views.List_2, name="List2"),
+    path("warmup-2/font-times/", app.views.Warmup_2, name="Warmup2"),
+    path("logic-2/no-teen-sum/", app.views.Logic_2, name="Logic2"),
+    path("string-2/xyz-there/", app.views.String_2, name="String2"),
+    path("list-2/centered-average/", app.views.List_2, name="List2"),
     path("admin/", admin.site.urls),
 ]
