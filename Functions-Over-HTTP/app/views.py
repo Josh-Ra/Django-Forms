@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.Http import HttpRequest
+from django.http import HttpRequest
 from .forms import AgeInForm, HeyForm, OrderTotalForm
 
 
